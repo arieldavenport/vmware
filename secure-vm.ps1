@@ -1,5 +1,4 @@
 #these are all all currently set to false and will be updated to true
-#test
 $vms =  Get-VM
 foreach ($vm in $vms) {
 New-AdvancedSetting -Entity $vm -Name isolation.bios.bbs.disable -Value TRUE -Confirm:$false -Force:$true
